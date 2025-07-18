@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
 })
 export class TaxAmount {
   @Input() value: number | null = null;
-  @Input() vat: number = 0;
 
   @Output() valueChange = new EventEmitter<number>();
   @Output() vatInvalid = new EventEmitter<boolean>();
@@ -47,10 +46,10 @@ export class TaxAmount {
   }
 
   get minVat(): number {
-    return +Math.max(this.vat - 20, 0).toFixed(2);
+    return +Math.max((this.value ?? 0 ) - 20, 0).toFixed(2);
   }
 
   get maxVat(): number {
-    return +(this.vat + 20).toFixed(2);
+    return +((this.value ?? 0 ) + 20).toFixed(2);
   }
 }

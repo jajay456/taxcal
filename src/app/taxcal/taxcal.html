@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <app-tax-amount [value]="changtaxAmount" [vat]="taxAmount" (valueChange)="changtaxAmount = $event"
+                    <app-tax-amount [value]="taxAmount"  (valueChange)="changtaxAmount = $event"
                         (vatInvalid)="InvalidVat = $event" (minVatChange)="minVat = $event" (maxVatChange)="maxVat = $event">
                         >
                     </app-tax-amount>
