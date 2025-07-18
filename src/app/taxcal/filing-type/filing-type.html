@@ -1,0 +1,23 @@
+<label for="filing-type">Choose Filing Type:</label>
+<div class="radio-options" id="filing-type">
+  <label >
+    <input
+      type="radio"
+      name="filingType"
+      [value]="'Ordinary'"
+      [(ngModel)]="value"
+      (ngModelChange)="valueChange.emit($event)"
+    />
+    Ordinary
+  </label>
+  <label>
+    <input
+      type="radio"
+      name="filingType"
+      [value]="'Additional'"
+      [(ngModel)]="value"
+      (ngModelChange)="valueChange.emit($event)"
+    />
+    Additional
+  </label>
+</div>

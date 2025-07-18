@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms'; 
 import { TaxcalComponent } from './taxcal/taxcal.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TaxcalComponent],
+  imports: [FormsModule,TaxcalComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

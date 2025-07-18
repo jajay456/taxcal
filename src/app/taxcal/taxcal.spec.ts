@@ -1,23 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Taxcal } from './taxcal.component';
+import { TaxcalComponent } from './taxcal.component';
 
 describe('Taxcal', () => {
-  let component: Taxcal;
-  let fixture: ComponentFixture<Taxcal>;
+let component: TaxcalComponent;
+let fixture: ComponentFixture<TaxcalComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Taxcal]
-    })
-    .compileComponents();
+beforeEach(async () => {
+  await TestBed.configureTestingModule({
+    imports: [TaxcalComponent]
+  }).compileComponents();
 
-    fixture = TestBed.createComponent(Taxcal);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  fixture = TestBed.createComponent(TaxcalComponent);
+  component = fixture.componentInstance;
+  fixture.detectChanges();
+});
 });

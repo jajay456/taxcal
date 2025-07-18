@@ -1,0 +1,16 @@
+<div>
+  <div class="input-group">
+    <input
+      type="text"
+      class="form-control text-end"
+      [(ngModel)]="displayValue"
+      (ngModelChange)="onChange($event)"
+      [ngModelOptions]="{ standalone: true }"
+      placeholder="THB"
+    />
+    <span class="input-group-text">THB</span>
+  </div>
+  <small *ngIf="invalid" class="text-danger">
+    Invalid tax : Must be between {{ minVat }} and {{ maxVat }}
+  </small>
+</div>

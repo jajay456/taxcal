@@ -1,0 +1,12 @@
+
+<select
+  class="form-control"
+  [(ngModel)]="value"
+  (ngModelChange)="valueChange.emit($event)">
+<option
+  *ngFor="let month of months"
+  [value]="month?.label"
+  [disabled]="month?.value ? isDisabled(month.value) : false">
+  {{ month?.label }}
+</option>
+</select>

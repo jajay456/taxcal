@@ -1,0 +1,139 @@
+.form-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  margin: 0 auto;
+  
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #000;
+  background-color: white;
+  z-index: 1;
+}
+
+.step.active .circle {
+  background-color: #000;
+  color: white;
+}
+
+.label {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #999;
+}
+
+.step.active .label {
+  font-weight: bold;
+  color: #000;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: #000;
+  margin-top: -20px; 
+  z-index: 0;
+}
+
+.form-section {
+  background: #ffffff;
+  border: 2px solid #000000;
+  padding: 2rem;
+  border-radius: 6px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+  padding: 0.4rem 0.6rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: right;
+}
+input[readonly],
+input[disabled] {
+  background: #eee;
+  color: #555;
+}
+
+
+
+option{
+    text-align: left;
+}
+
+.row {
+  display: flex;    
+  gap: 1rem;           
+  flex-wrap: wrap;     
+  margin-top: 0.5rem;  
+}
+
+.container{
+  display: flex;    
+  flex-wrap: wrap;     
+  margin-top: 0.5rem;  
+}
+
+.thick-bottom-border {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #000; 
+}
+
+.thick-top-border{
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #000; 
+}
+form {
+  padding-bottom: 3rem;
+}
