@@ -1,17 +1,17 @@
 # Tax Calculator App 
 
-ระบบคำนวณภาษีมูลค่าเพิ่ม (VAT) สำหรับการยื่นแบบภาษีออนไลน์ พัฒนาโดยใช้ Angular 17 + Standalone Component + Signal พร้อมระบบคำนวณอัตโนมัติ
+A system for calculating value-added tax (VAT) for online tax filing developed using Angular 20 + Standalone Component + Signal with an automatic calculation system.
 
-## คุณสมบัติ
+## Qualifications
 
-- กรอกข้อมูลประเภทการยื่นแบบ (Filing Type)
-- ระบุเดือนและปีภาษี
-- ใส่มูลค่าก่อน VAT แล้วระบบคำนวณ VAT ให้อัตโนมัติ
-- ตรวจสอบความถูกต้องของ VAT โดยอิงจากช่วงที่กำหนด (min/max)
-- คำนวณยอดภาษีรวม (รวม Surcharge + Penalty)
-- แสดงข้อผิดพลาดเมื่อ VAT อยู่นอกช่วงที่กำหนด
+- Fill in the filing type
+- Specify the month and tax year
+- Input the value before VAT, and the system will automatically calculate the VAT
+- Verify the accuracy of VAT based on the specified range (min/max)
+- Calculate the total tax (including Surcharge + Penalty)
+- Display an error when VAT is outside the specified range
 ```
-## โครงสร้างโปรเจกต์ (บางส่วน)
+## Project structure 
 src/app/ 
 ├── taxcal/
 │ ├── taxcal.component.ts
@@ -37,4 +37,20 @@ Package Manager: npm 10.9.2
 
 OS: win32 x64
 
+## Installation
+install dependencies:
+```
+npm install
+```
+start serve:
+```
+ng serve
+```
 
+Things that have not been done
+
+The VAT capture is not finished yet. If the screen starts when entering the VAT Amount, it can be 0.
+
+The modal is not fully completed yet, but it can display JSON. I'm not sure if it's a JSON message or not.
+
+And I use AI in Some parts.
