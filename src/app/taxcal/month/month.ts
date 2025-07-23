@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     FormsModule],
   templateUrl: './month.html',
-  styleUrl: './month.css'
 })
 export class Month {
   

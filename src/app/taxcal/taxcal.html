@@ -37,14 +37,14 @@
 
             <div class="row">
                 <div class="col-md-3">
-                    <label>VAT Month</label>
+                    <label for="vatMonth">VAT Month</label>
                     <app-month [value]="taxForm.get('vatMonth')?.value || ''" [months]="months"
                         [isDisabled]="isDisabled" (valueChange)="taxForm.patchValue({ vatMonth: $event })">
                     </app-month>
                 </div>
 
                 <div class="col-md-3">
-                    <label>VAT Year</label>
+                    <label for="vatYear">VAT Year</label>
                     <app-year [Years]="Years" [value]="taxForm.get('vatYear')?.value ?? undefined"
                         (valueChange)="taxForm.patchValue({ vatYear: $event })">
                     </app-year>
@@ -92,7 +92,7 @@
         </fieldset>
         <fieldset>
             <ng-container *ngIf="showAdditional">
-                <label>In case of late filling and payment, or additional </label>
+                <p>In case of late filing and payment, or additional</p>
                 <div class="container mt-3 ">
                     <div class="col-md-9 ">
                         <p>Surcharge (10%)</p>

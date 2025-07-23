@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './total-amount.html',
-  styleUrls: ['./total-amount.css'],
 })
 export class TotalAmount implements OnChanges {
   @Input() changtaxAmount: number | null = null;

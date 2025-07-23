@@ -24,7 +24,7 @@ import { JsonModalComponent } from './json-modal/json-modal';
 })
 export class TaxcalComponent {
 
-  constructor(private modalService: BsModalService) { }
+  constructor(private readonly modalService: BsModalService) { }
 
   currentStep = 0;
   currentMonth: number = 0;

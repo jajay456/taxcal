@@ -6,7 +6,6 @@ import { TaxcalComponent } from './taxcal/taxcal.component';
   selector: 'app-root',
   imports: [FormsModule,TaxcalComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('my-angular-app');

@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './penalty.html',
-  styleUrl: './penalty.css'
 })
 export class Penalty implements OnChanges {
   @Input() filingSubType: string = '';
@@ -15,12 +14,9 @@ export class Penalty implements OnChanges {
 
   @Output() penaltyChange = new EventEmitter<number>();
 
-  get penalty(): number {
-    if (this.showAdditional && this.filingSubType === 'Late') {
-      return 200;
-    }
-    return 200;
-  }
+get penalty(): number {
+  return 200;
+}
 
   ngOnChanges(changes: SimpleChanges): void {
     this.penaltyChange.emit(this.penalty); 

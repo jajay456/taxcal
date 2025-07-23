@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
      CommonModule
   ],
   templateUrl: './sale-amount.html',
-  styleUrl: './sale-amount.css'
 })
 export class SaleAmount {
   @Input() value: number | null = null;

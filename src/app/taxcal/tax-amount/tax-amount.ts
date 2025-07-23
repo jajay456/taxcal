@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
   selector: 'app-tax-amount',
   imports: [FormsModule,CommonModule],
   templateUrl: './tax-amount.html',
-  styleUrl: './tax-amount.css'
 })
 export class TaxAmount {
   @Input() value: number | null = null;

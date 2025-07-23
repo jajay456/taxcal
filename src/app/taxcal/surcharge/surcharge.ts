@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './surcharge.html',
-  styleUrl: './surcharge.css',
 })
 export class Surcharge implements OnChanges {
   @Input() changtaxAmount: number | null = null;

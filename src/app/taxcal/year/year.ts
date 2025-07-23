@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ],
   templateUrl: './year.html',
-  styleUrl: './year.css'
 })
 export class Year {
   @Input() Years: number[] = [];
