@@ -1,59 +1,56 @@
-# MyAngularApp
+# Tax Calculator App 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+A system for calculating value-added tax (VAT) for online tax filing developed using Angular 20 + Standalone Component + Signal with an automatic calculation system.
 
-## Development server
+## Qualifications
 
-To start a local development server, run:
+- Fill in the filing type
+- Specify the month and tax year
+- Input the value before VAT, and the system will automatically calculate the VAT
+- Verify the accuracy of VAT based on the specified range (min/max)
+- Calculate the total tax (including Surcharge + Penalty)
+- Display an error when VAT is outside the specified range
+```
+## Project structure 
+src/app/ 
+├── taxcal/
+│ ├── taxcal.component.ts
+│ ├── taxcal.html
+│ ├── filing-type/
+│ ├── month/
+│ ├── year/
+│ ├── sale-amount/
+│ ├── tax-amount/
+│ ├── surcharge/
+│ ├── penalty/
+│ └── total-amount/
+├── app.ts
+├── app.routes.ts
+└── app.config.ts
+```
+## Project Specs
+Angular CLI: 20.1.0 
 
-```bash
+Node: 22.17.1
+
+Package Manager: npm 10.9.2
+
+OS: win32 x64
+
+## Installation
+install dependencies:
+```
+npm install
+```
+start serve:
+```
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Things that have not been done
 
-## Code scaffolding
+The VAT capture is not finished yet. If the screen starts when entering the VAT Amount, it can be 0.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The modal is not fully completed yet, but it can display JSON. I'm not sure if it's a JSON message or not.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+And I use AI in Some parts.
